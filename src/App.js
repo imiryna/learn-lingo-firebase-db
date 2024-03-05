@@ -1,7 +1,11 @@
-// import React from "react";
+import React from "react";
+import Home from "./pages/HomePage";
+import { Route, Routes } from "react-router-dom";
 
 export const App = () => {
-  return <div>Hello word</div>;
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
+  );
 };
-
-export default App;
