@@ -7,7 +7,7 @@ export const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/teacher" element={<Teachers />} />
+      <Route path="/teachers" element={<Teachers />} />
     </Routes>
   );
 };
