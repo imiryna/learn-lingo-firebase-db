@@ -12,4 +12,4 @@ const TeachersPage = () => {
   );
 };
 
-export default HomePage;
+export default TeachersPage;
