@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import { ReactComponent as Logo } from "../../asserts/ukraine.svg";
 import { ReactComponent as YellowArrow } from "../../asserts/log-in-01.svg";
 // import { ReactComponent as GreenArrow } from "../../asserts/log-in-02.svg";
@@ -8,7 +8,7 @@ import { ReactComponent as YellowArrow } from "../../asserts/log-in-01.svg";
 
 export const Navigation = () => {
   return (
-    <>
+    <div>
       <nav>
         <div>
           <Logo />
@@ -24,6 +24,7 @@ export const Navigation = () => {
           <button type="button">Registration</button>
         </div>
       </nav>
-    </>
+      <Outlet />
+    </div>
   );
 };
