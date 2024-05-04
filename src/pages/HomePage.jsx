@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <>
       <nav>
-        <div>{Logo}</div>
+        <Logo />
         <div>LearnLingo</div>
       </nav>
       <h1>HELLO</h1>
