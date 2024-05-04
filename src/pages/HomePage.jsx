@@ -1,15 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import Teachers from "./TeachersPage";
-import { ReactComponent as Logo } from "../asserts/ukraine.svg";
+import { Navigation } from "../components/Navigation/Navigation";
 
 const HomePage = () => {
   return (
     <>
-      <nav>
-        <Logo />
-        <div>LearnLingo</div>
-      </nav>
+      <Navigation />
       <h1>HELLO</h1>
       <ul>
         <li>Spain</li>
