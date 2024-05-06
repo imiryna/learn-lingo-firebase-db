@@ -1,13 +1,18 @@
-import React from "react";
+import { Suspense } from "react";
 import Home from "./pages/HomePage";
 import { Route, Routes } from "react-router-dom";
 import Teachers from "./pages/TeachersPage";
+import Navigation from "./components/Navigation/Navigation";
 
 export const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/teachers" element={<Teachers />} />
-    </Routes>
+    <Suspense>
+      <Routes>
+        <Route path="/" element={<Navigation />}>
+          <Route index element={<Home />} />
+          <Route path="/teachers" element={<Teachers />} />
+        </Route>
+      </Routes>
+    </Suspense>
   );
 };
