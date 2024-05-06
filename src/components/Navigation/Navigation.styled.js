@@ -5,7 +5,6 @@ export const ContextSection = styled.section`
   padding-top: 30px;
   padding-left: 128px;
   padding-right: 128px;
-  margin-bottom: 30px;
 `;
 export const NavigationCss = styled.nav`
   display: flex;
