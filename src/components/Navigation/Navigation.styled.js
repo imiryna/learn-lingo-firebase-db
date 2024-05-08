@@ -34,9 +34,9 @@ export const NavLinkCss = styled(NavLink)`
 `;
 
 export const WraperOfSvg = styled.div`
-  border: dashed rgb(232, 230, 230) 1px;
+  /* border: dashed rgb(232, 230, 230) 1px;
   width: 20px;
-  height: 20px;
+  height: 20px; */
 `;
 export const ButtonCss = styled.button`
   display: block;
