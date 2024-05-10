@@ -2,11 +2,14 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const ContextSection = styled.section`
+  /* padding-left: 128px;
+  padding-right: 128px; */
+`;
+export const NavigationCss = styled.nav`
   padding-top: 30px;
   padding-left: 128px;
   padding-right: 128px;
-`;
-export const NavigationCss = styled.nav`
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -18,6 +21,9 @@ export const LogoCss = styled.div`
   gap: 8px;
   align-items: center;
   margin-right: 390px;
+`;
+export const LogoText = styled.div`
+  white-space: normal;
 `;
 
 export const LinksBoxCss = styled.div`

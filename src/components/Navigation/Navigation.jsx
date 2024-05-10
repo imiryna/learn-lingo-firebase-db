@@ -6,7 +6,7 @@ import { ReactComponent as YellowArrow } from "../../asserts/log-in-01.svg";
 // import { ReactComponent as BlouArrow } from "../../asserts/log-in-03.svg";
 // import { ReactComponent as PinkArrow } from "../../asserts/log-in-04.svg";
 
-import { ContextSection, NavigationCss, LogoCss, LinksBoxCss, NavLinkCss, WraperOfSvg, ButtonCss } from "./Navigation.styled";
+import { ContextSection, NavigationCss, LogoCss, LinksBoxCss, NavLinkCss, WraperOfSvg, ButtonCss, LogoText } from "./Navigation.styled";
 
 const Navigation = () => {
   return (
@@ -25,7 +25,7 @@ const Navigation = () => {
             <WraperOfSvg>
               <YellowArrow />
             </WraperOfSvg>
-            <div>Log in</div>
+            <LogoText>Log in</LogoText>
             <ButtonCss type="button">Registration</ButtonCss>
           </LogoCss>
         </NavigationCss>
