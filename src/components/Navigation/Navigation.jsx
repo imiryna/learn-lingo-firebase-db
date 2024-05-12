@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import { ReactComponent as Logo } from "../../asserts/ukraine.svg";
 import { ReactComponent as YellowArrow } from "../../asserts/log-in-01.svg";
+import { DropdownMenu } from "../DropdownMenu/DropdownMenu";
 // import { ReactComponent as GreenArrow } from "../../asserts/log-in-02.svg";
 // import { ReactComponent as BlouArrow } from "../../asserts/log-in-03.svg";
 // import { ReactComponent as PinkArrow } from "../../asserts/log-in-04.svg";
@@ -21,6 +22,7 @@ const Navigation = () => {
             <NavLinkCss to="/">Home</NavLinkCss>
             <NavLinkCss to="/teachers">Teachers</NavLinkCss>
           </LinksBoxCss>
+          <DropdownMenu />
           <LogoCss>
             <WraperOfSvg>
               <YellowArrow />
