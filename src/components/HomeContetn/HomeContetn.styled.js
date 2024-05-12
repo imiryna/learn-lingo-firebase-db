@@ -34,7 +34,9 @@ export const ImgBlockCss = styled.img`
   height: 530px;
   border-radius: 30px;
   border-color: white;
-  background-image: ${backgroundImg};
+  content: url(${backgroundImg});
+
+  /* background-image: url(${backgroundImg}); */
 `;
 export const StatisticBlock = styled.div`
   display: grid;
