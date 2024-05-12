@@ -1,5 +1,18 @@
 import styled from "styled-components";
 import theme from "styled-theming";
+import Block from "../../asserts/block.jpeg";
+import BlueBlock from "../../asserts/block-blue.png";
+import GreenBlock from "../../asserts/block-green.png";
+import PinkBlock from "../../asserts/block-pink.png";
+import CreamBlock from "../../asserts/block-cream.png";
+
+export const backgroundImg = theme("theme", {
+  yellow: Block,
+  green: GreenBlock,
+  blue: BlueBlock,
+  pink: PinkBlock,
+  cream: CreamBlock,
+});
 
 export const MainContainer = styled.section`
   padding-top: 88px;
@@ -15,8 +28,13 @@ export const MainContainer = styled.section`
 `;
 export const InfoBlok = styled.div``;
 
-export const ImgCss = styled.img`
+export const ImgBlockCss = styled.img`
   display: block;
+  width: 568px;
+  height: 530px;
+  border-radius: 30px;
+  border-color: white;
+  background-image: ${backgroundImg};
 `;
 export const StatisticBlock = styled.div`
   display: grid;

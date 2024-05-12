@@ -6,7 +6,7 @@ export const DropdownMenu = () => {
     <DropdownBlockCss>
       <select>
         <option value="fruit">Colors</option>
-        <option value="yellow">EYellow</option>
+        <option value="yellow">Yellow</option>
         <option value="green">Green</option>
         <option value="blue">Blue</option>
         <option value="pink">Pink</option>
