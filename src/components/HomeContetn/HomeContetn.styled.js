@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import theme from "styled-theming";
 
 export const MainContainer = styled.section`
   padding-top: 88px;
