@@ -1,11 +1,11 @@
 import React from "react";
 
-import { HomeContetn } from "../components/HomeContetn/HomeContetn";
+import { HomeContent } from "../components/HomeContent/HomeContent";
 
 const HomePage = () => {
   return (
     <>
-      <HomeContetn />
+      <HomeContent />
     </>
   );
 };

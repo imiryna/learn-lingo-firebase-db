@@ -1,8 +1,8 @@
 import React from "react";
-import { MainContainer, StatisticBlock, InfoBlok, ImgBlockCss } from "./HomeContetn.styled";
+import { MainContainer, StatisticBlock, InfoBlok, ImgBlockCss } from "./HomeContent.styled";
 import { ThemeProvider } from "styled-components";
 
-export const HomeContetn = () => {
+export const HomeContent = () => {
   return (
     <>
       <MainContainer>
