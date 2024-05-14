@@ -2,6 +2,11 @@ LERN LINGO (TRAINING PROJECT)
 
 The project was created for searching the teachers of foreign languages and arange a lesson according to personal settings.
 
+The application consists of 3 pages:
+• "Home" page with a list of company benefits and a link to start working with the application.
+• "Teachers" page, which contains a list of teachers with filter by the language/level/price per hour of class.
+• "Favorites" with teachers who were added by the user to "favorites" (private page ).
+
 With this application you can:
 
 In the project directory, you can run:
