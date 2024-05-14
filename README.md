@@ -7,11 +7,11 @@ The application consists of 3 pages:
 • "Teachers" page, which contains a list of teachers with filter by the language/level/price per hour of class.
 • "Favorites" with teachers who were added by the user to "favorites" (private page ).
 
-With this application you can:
+HOW TO LAUNCH THE PROJECT:
 
-In the project directory, you can run:
-
-### `npm start`
+1. ### `npm i`
+2. ### `npm start`
+3. ### enjoy
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
