@@ -1,16 +1,16 @@
 import React from "react";
-import { MainContainer, StatisticBlock, InfoBlok, ImgBlockCss } from "./HomeContent.styled";
+import { MainContainer, StatisticBlock, InfoBlok, ImgBlockCss, BtnCss } from "./HomeContent.styled";
 import { ThemeProvider } from "styled-components";
 
 export const HomeContent = () => {
   return (
     <>
       <MainContainer>
-        <ThemeProvider theme={{ theme: "yellow" }}>
+        <ThemeProvider theme={{ theme: "blue" }}>
           <InfoBlok>
             <div>Unlock your potential with the best language tutors</div>
             <p>Embark on an Exciting Language Journey with Expert Language Tutors: Elevate your language proficiency to new heights by connecting with highly qualified and experienced tutors.</p>
-            <button>Get started</button>
+            <BtnCss>Get started</BtnCss>
           </InfoBlok>
           <ImgBlockCss></ImgBlockCss>
 

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import theme from "styled-theming";
 
 export const ContextSection = styled.section`
   /* padding-left: 128px;

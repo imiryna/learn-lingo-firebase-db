@@ -14,6 +14,22 @@ export const backgroundImg = theme("theme", {
   cream: CreamBlock,
 });
 
+export const backgroundBtn = theme("theme", {
+  yellow: " rgb(244, 197, 80)",
+  green: "rgb(159, 186, 174)",
+  blue: "rgb(159, 183, 206)",
+  pink: "rgb(224, 163, 154)",
+  cream: "rgb(240, 170, 141)",
+});
+
+export const focusBackgroundBtn = theme("theme", {
+  yellow: " rgb(255, 220, 134)",
+  green: "rgb(203, 222, 211)",
+  blue: "rgb(191, 214, 234)",
+  pink: "rgb(242, 192, 189)",
+  cream: "rgb(244, 200, 186)",
+});
+
 export const borderColor = theme("theme", {
   yellow: "repeating-linear-gradient(146deg, #f4c550, #f4c550 12px, transparent 12px, transparent 23px, #f4c550 23px), repeating-linear-gradient(236deg, #f4c550, #f4c550 12px, transparent 12px, transparent 23px, #f4c550 23px), repeating-linear-gradient(-34deg, #f4c550, #f4c550 12px, transparent 12px, transparent 23px, #f4c550 23px), repeating-linear-gradient(56deg, #f4c550, #f4c550 12px, transparent 12px, transparent 23px, #f4c550 23px)",
   green: "repeating-linear-gradient(146deg, #9fbaae, #9fbaae 12px, transparent 12px, transparent 23px, #9fbaae 23px), repeating-linear-gradient(236deg, #9fbaae, #9fbaae 12px, transparent 12px, transparent 23px, #9fbaae 23px), repeating-linear-gradient(-34deg, #9fbaae, #9fbaae 12px, transparent 12px, transparent 23px, #9fbaae 23px), repeating-linear-gradient(56deg, #9fbaae, #9fbaae 12px, transparent 12px, transparent 23px, #9fbaae 23px)",
@@ -57,4 +73,18 @@ export const StatisticBlock = styled.div`
   background-size: 2px 100%, 100% 2px, 2px 100%, 100% 2px;
   background-position: 0 0, 0 0, 100% 0, 0 100%;
   background-repeat: no-repeat;
+`;
+
+export const BtnCss = styled.button`
+  display: block;
+  padding: 16px 88px;
+  border-radius: 12px;
+
+  background: ${backgroundBtn};
+  border: none;
+  transition: background-color 200ms;
+
+  &:focus {
+    background-color: ${focusBackgroundBtn};
+  }
 `;
