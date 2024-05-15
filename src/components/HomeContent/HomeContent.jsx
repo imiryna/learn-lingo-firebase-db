@@ -1,15 +1,18 @@
 import React from "react";
-import { useSelect } from "react-redux";
+import { useSelector } from "react-redux";
+import { selectColor } from "../../Store/themeToggle/themeSlice";
 
 /* styled */
 import { MainContainer, StatisticBlock, InfoBlok, ImgBlockCss, BtnCss } from "./HomeContent.styled";
 import { ThemeProvider } from "styled-components";
 
 export const HomeContent = () => {
+  const color = useSelector(selectColor);
+
   return (
     <>
       <MainContainer>
-        <ThemeProvider theme={{ theme: "blue" }}>
+        <ThemeProvider theme={{ theme: color }}>
           <InfoBlok>
             <div>Unlock your potential with the best language tutors</div>
             <p>Embark on an Exciting Language Journey with Expert Language Tutors: Elevate your language proficiency to new heights by connecting with highly qualified and experienced tutors.</p>
