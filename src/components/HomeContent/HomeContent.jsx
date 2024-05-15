@@ -1,4 +1,7 @@
 import React from "react";
+import { useSelect } from "react-redux";
+
+/* styled */
 import { MainContainer, StatisticBlock, InfoBlok, ImgBlockCss, BtnCss } from "./HomeContent.styled";
 import { ThemeProvider } from "styled-components";
 

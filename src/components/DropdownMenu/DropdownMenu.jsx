@@ -1,10 +1,17 @@
 import React from "react";
 import { DropdownBlockCss } from "./DropdownMenu.styled";
+import { setColor } from "../../Store/themeToggle/themeSlice";
+import { useDispatch } from "react-redux";
 
 export const DropdownMenu = () => {
+  const dispatch = useDispatch();
+
+  const selectChange = (e) => {
+    dispatch(setColor(e.target.value));
+  };
   return (
     <DropdownBlockCss>
-      <select>
+      <select onChange={selectChange}>
         <option value="fruit">Colors</option>
         <option value="yellow">Yellow</option>
         <option value="green">Green</option>
