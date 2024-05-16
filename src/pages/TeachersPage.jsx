@@ -1,13 +1,10 @@
 import React from "react";
+import { TeacherCard } from "../components/TeacherCard/TeacherCard";
 
 const TeachersPage = () => {
   return (
     <div>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ul>
+      <TeacherCard />
     </div>
   );
 };

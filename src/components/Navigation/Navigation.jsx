@@ -12,7 +12,7 @@ import { ReactComponent as BlueArrow } from "../../asserts/log-in-03.svg";
 import { ReactComponent as PinkArrow } from "../../asserts/log-in-04.svg";
 import { ReactComponent as CreamArrow } from "../../asserts/log-in-05.svg";
 
-import { ContextSection, NavigationCss, LogoCss, LinksBoxCss, NavLinkCss, WraperOfSvg, ButtonCss, LogoText, LoginIcon } from "./Navigation.styled";
+import { ContextSection, NavigationCss, LogoCss, LinksBoxCss, NavLinkCss, WraperOfSvg, ButtonCss, LogoText } from "./Navigation.styled";
 
 const Navigation = () => {
   const color = useSelector(selectColor);
