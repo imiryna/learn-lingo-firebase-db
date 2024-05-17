@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Learn-lingo/static/css/main.e6c13ad2.css",
+    "main.js": "/Learn-lingo/static/js/main.6e30914f.js",
+    "static/js/453.02e22145.chunk.js": "/Learn-lingo/static/js/453.02e22145.chunk.js",
+    "static/media/block-green.png": "/Learn-lingo/static/media/block-green.66601cb1ee911a49acb8.png",
+    "static/media/block-blue.png": "/Learn-lingo/static/media/block-blue.65b12e2bc8d9903f4c69.png",
+    "static/media/block-pink.png": "/Learn-lingo/static/media/block-pink.ae617601d9eeeb77057a.png",
+    "static/media/block-cream.png": "/Learn-lingo/static/media/block-cream.7728ebd07d15e6064440.png",
+    "static/media/block.jpeg": "/Learn-lingo/static/media/block.d14e84db31926fe9fc55.jpeg",
+    "static/media/log-in-01.svg": "/Learn-lingo/static/media/log-in-01.3197bbfbad9205f37637b1f606a8fc03.svg",
+    "static/media/log-in-02.svg": "/Learn-lingo/static/media/log-in-02.cddc5d00447d8743bb1e689b5617a1f2.svg",
+    "static/media/log-in-03.svg": "/Learn-lingo/static/media/log-in-03.cc7945133a8b82a1566186314825aed2.svg",
+    "static/media/log-in-04.svg": "/Learn-lingo/static/media/log-in-04.738183255c7401b7b135176ce48da659.svg",
+    "static/media/log-in-05.svg": "/Learn-lingo/static/media/log-in-05.d38df27100df5fe4137f2ea63a117b82.svg",
+    "static/media/ukraine.svg": "/Learn-lingo/static/media/ukraine.3a664e78a867ef0559bf4fc108a55878.svg",
+    "index.html": "/Learn-lingo/index.html",
+    "main.e6c13ad2.css.map": "/Learn-lingo/static/css/main.e6c13ad2.css.map",
+    "main.6e30914f.js.map": "/Learn-lingo/static/js/main.6e30914f.js.map",
+    "453.02e22145.chunk.js.map": "/Learn-lingo/static/js/453.02e22145.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.6e30914f.js"
+  ]
+}
