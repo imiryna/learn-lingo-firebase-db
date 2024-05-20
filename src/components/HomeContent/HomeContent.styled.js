@@ -70,8 +70,16 @@ export const StatisticBlock = styled.div`
   box-sizing: border-box;
   background-image: ${borderColor};
   border-radius: 30px;
-  background-size: 2px 100%, 100% 2px, 2px 100%, 100% 2px;
-  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-size:
+    2px 100%,
+    100% 2px,
+    2px 100%,
+    100% 2px;
+  background-position:
+    0 0,
+    0 0,
+    100% 0,
+    0 100%;
   background-repeat: no-repeat;
 `;
 
@@ -83,6 +91,7 @@ export const BtnCss = styled.button`
   background: ${backgroundBtn};
   border: none;
   transition: background-color 200ms;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
   &:focus {
     background-color: ${focusBackgroundBtn};

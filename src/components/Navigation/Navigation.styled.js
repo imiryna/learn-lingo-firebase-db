@@ -51,4 +51,5 @@ export const ButtonCss = styled.button`
   border: solid rgb(18, 20, 23) 1px;
   color: rgb(255, 255, 255);
   background: rgb(18, 20, 23);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 `;
