@@ -1,3 +1,8 @@
-import { Axios } from "axios";
+import { learnLindoInstance } from "./instance";
 
-const BASE_URL = "http://localhost:4000/";
+export const getAllTeachers = async () => {
+  console.log(learnLindoInstance);
+  const { data } = await learnLindoInstance.get(`/teachers`);
+  console.log(data);
+  return data;
+};
