@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { getAllTeachers } from "../../services/api";
 
-export const getAllteachersThunk = createAsyncThunk(
+export const getAllTeachersThunk = createAsyncThunk(
   "teachers/getAllteachers",
 
   async (_, thunkAPI) => {
