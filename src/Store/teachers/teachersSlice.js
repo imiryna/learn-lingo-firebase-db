@@ -1,4 +1,4 @@
-import { createSlice, isAnyOf } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 import { getAllTeachersThunk } from "../teachers/teachersThunk";
 
 const INITIAL_STATE = {
@@ -7,7 +7,7 @@ const INITIAL_STATE = {
   isLoading: true,
 };
 
-const allTeachersSlice = createSlice({
+export const allTeachersSlice = createSlice({
   name: "teachers",
   initialState: INITIAL_STATE,
   extraReducers: (builder) => {
