@@ -1,7 +1,10 @@
 import React from "react";
 import { WraperCardCss } from "./TeacherCard.styled";
+import { useSelector } from "react-redux";
 
 export const TeacherCard = () => {
+  const card = useSelector();
+
   return (
     <>
       <WraperCardCss>
