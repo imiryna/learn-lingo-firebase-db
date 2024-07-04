@@ -12,6 +12,7 @@ export const TeacherCard = () => {
         <div>
           <div>
             <div>Languages</div>
+            <div>ghggh</div>
             <div></div>
           </div>
           <div></div>
