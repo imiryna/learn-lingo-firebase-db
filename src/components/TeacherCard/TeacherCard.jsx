@@ -1,19 +1,15 @@
 import React from "react";
 import { WraperCardCss } from "./TeacherCard.styled";
-import { useSelector } from "react-redux";
 
-export const TeacherCard = () => {
-  const card = useSelector();
-
+export const TeacherCard = (cardInfo) => {
   return (
     <>
       <WraperCardCss>
         <div>Lorem, ipsum dolor sit amet consectetur tempore.</div>
         <div>
           <div>
-            <div>Languages</div>
+            <div>{cardInfo.name}</div>
             <div>ghggh</div>
-            <div></div>
           </div>
           <div></div>
           <div></div>

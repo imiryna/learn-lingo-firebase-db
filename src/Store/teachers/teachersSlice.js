@@ -7,7 +7,12 @@ const INITIAL_STATE = {
   isLoading: true,
 };
 
-export const allTeachersSlice = createSlice({
+const handleRejected = (state, { payload }) => {
+  state.isLoading = false;
+  state.error = payload;
+};
+
+const allTeachersSlice = createSlice({
   name: "teachers",
   initialState: INITIAL_STATE,
   extraReducers: (builder) => {
@@ -26,3 +31,5 @@ export const allTeachersSlice = createSlice({
       });
   },
 });
+
+export const teachersReducer = allTeachersSlice.reducer;

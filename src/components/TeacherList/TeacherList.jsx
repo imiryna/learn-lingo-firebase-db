@@ -1,9 +1,24 @@
-import React from "react";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+
+//selector
+import { selectTeachers } from "Store/teachers/teachersSelector";
+import { getAllTeachersThunk } from "Store/teachers/teachersThunk";
 
 export const TeacherList = () => {
+  const teacherCard = useSelector(selectTeachers);
+  console.log(teacherCard);
+  const dispatcher = useDispatch();
+
+  dispatcher(getAllTeachersThunk);
+
   return (
-    <ul>
-      <li>ghgg</li>
-    </ul>
+    <div>
+      {teacherCard.map((item) => (
+        <ul key={item.id}>
+          <li cardInfo={item}></li>
+        </ul>
+      ))}
+    </div>
   );
 };
