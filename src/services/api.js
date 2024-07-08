@@ -1,7 +1,7 @@
 import { learnLindoInstance } from "./instance";
 
 export const getAllTeachers = async () => {
-  const { data } = await learnLindoInstance.get(`/teachers`);
+  const { data } = await learnLindoInstance.get(`/teacher`);
   console.log(data);
-  return data;
+  return data.data;
 };

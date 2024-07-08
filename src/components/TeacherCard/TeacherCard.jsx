@@ -1,11 +1,11 @@
 import React from "react";
 import { WraperCardCss } from "./TeacherCard.styled";
 
-export const TeacherCard = (cardInfo) => {
+export const TeacherCard = ({ cardInfo }) => {
   return (
     <>
       <WraperCardCss>
-        <div>Lorem, ipsum dolor sit amet consectetur tempore.</div>
+        <div>{cardInfo.name}</div>
         <div>
           <div>
             <div>{cardInfo.name}</div>

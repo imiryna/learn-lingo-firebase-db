@@ -5,20 +5,29 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectTeachers } from "Store/teachers/teachersSelector";
 import { getAllTeachersThunk } from "Store/teachers/teachersThunk";
 
+//components & style
+import { TeacherCard } from "components/TeacherCard/TeacherCard";
+
 export const TeacherList = () => {
   const teacherCard = useSelector(selectTeachers);
   console.log(teacherCard);
-  const dispatcher = useDispatch();
+  const dispatch = useDispatch();
 
-  dispatcher(getAllTeachersThunk);
+  useEffect(() => {
+    dispatch(getAllTeachersThunk());
+  }, [dispatch]);
 
   return (
     <div>
-      {teacherCard.map((item) => (
-        <ul key={item.id}>
-          <li cardInfo={item}></li>
-        </ul>
-      ))}
+      {teacherCard && teacherCard.length > 0 ? (
+        teacherCard.map((item) => (
+          <ul key={item.id}>
+            <TeacherCard cardInfo={item} />
+          </ul>
+        ))
+      ) : (
+        <p>No teachers available</p>
+      )}
     </div>
   );
 };
