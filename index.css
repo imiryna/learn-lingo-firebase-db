@@ -80,5 +80,6 @@ body.modal-open {
   --primery-font: "Roboto", sans-serif;
 
   /* background color */
-  --gray-bgrnd: rgb(248, 248, 248);
+  --gray-bgrnd: rgb(231, 231, 231);
+  --background: rgb(255, 255, 255);
 }

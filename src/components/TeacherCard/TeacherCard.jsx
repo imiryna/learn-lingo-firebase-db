@@ -1,19 +1,18 @@
 import React from "react";
-import { WraperCardCss } from "./TeacherCard.styled";
-
-import { AvatarWrap, Avatar } from "./TeacherCard.styled";
+import { WraperCardCss, Container, AvatarWrap, Avatar, NameCss } from "./TeacherCard.styled";
 
 export const TeacherCard = ({ cardInfo }) => {
-  console.log(cardInfo.avatar_url);
   return (
-    <>
+    <Container>
       <WraperCardCss>
         <AvatarWrap>
           <Avatar src={cardInfo.avatar_url} alt={cardInfo.name}></Avatar>
         </AvatarWrap>
         <div>
           <div>
-            <div>{cardInfo.name}</div>
+            <NameCss>
+              {cardInfo.name} {cardInfo.surname}
+            </NameCss>
             <div>ghggh</div>
           </div>
           <div></div>
@@ -26,6 +25,6 @@ export const TeacherCard = ({ cardInfo }) => {
           </div>
         </div>
       </WraperCardCss>
-    </>
+    </Container>
   );
 };
