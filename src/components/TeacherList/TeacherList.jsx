@@ -7,10 +7,11 @@ import { getAllTeachersThunk } from "Store/teachers/teachersThunk";
 
 //components & style
 import { TeacherCard } from "components/TeacherCard/TeacherCard";
+import { ContainerTeacherHome } from "./TeacherList.styled";
 
 export const TeacherList = () => {
   const teacherCard = useSelector(selectTeachers);
-  console.log(teacherCard);
+
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -18,7 +19,7 @@ export const TeacherList = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <ContainerTeacherHome>
       {teacherCard && teacherCard.length > 0 ? (
         teacherCard.map((item) => (
           <ul key={item.id}>
@@ -28,6 +29,6 @@ export const TeacherList = () => {
       ) : (
         <p>No teachers available</p>
       )}
-    </div>
+    </ContainerTeacherHome>
   );
 };

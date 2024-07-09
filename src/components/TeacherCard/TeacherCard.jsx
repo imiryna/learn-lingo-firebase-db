@@ -1,11 +1,16 @@
 import React from "react";
 import { WraperCardCss } from "./TeacherCard.styled";
 
+import { AvatarWrap, Avatar } from "./TeacherCard.styled";
+
 export const TeacherCard = ({ cardInfo }) => {
+  console.log(cardInfo.avatar_url);
   return (
     <>
       <WraperCardCss>
-        <div>{cardInfo.name}</div>
+        <AvatarWrap>
+          <Avatar src={cardInfo.avatar_url} alt={cardInfo.name}></Avatar>
+        </AvatarWrap>
         <div>
           <div>
             <div>{cardInfo.name}</div>

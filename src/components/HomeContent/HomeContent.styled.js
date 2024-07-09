@@ -50,7 +50,10 @@ export const MainContainer = styled.section`
   grid-template-columns: 720px 568px;
   grid-template-rows: 530px 116px;
 `;
-export const InfoBlok = styled.div``;
+export const InfoBlok = styled.div`
+  background-color: var(--grey-bgrnd);
+  border-radius: 30px;
+`;
 
 export const ImgBlockCss = styled.img`
   display: block;

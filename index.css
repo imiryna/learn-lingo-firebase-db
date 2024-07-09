@@ -78,4 +78,7 @@ body.modal-open {
   --secondary-cream: rgb(244, 200, 186);
   --secondaru-color: #d7e3ff;
   --primery-font: "Roboto", sans-serif;
+
+  /* background color */
+  --gray-bgrnd: rgb(248, 248, 248);
 }
