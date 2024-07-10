@@ -13,7 +13,7 @@ export const TeacherCard = ({ cardInfo }) => {
             <NameCss>
               {cardInfo.name} {cardInfo.surname}
             </NameCss>
-            <div>ghggh</div>
+            <div></div>
           </div>
           <div></div>
           <div></div>
